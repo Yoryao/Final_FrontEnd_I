@@ -96,3 +96,26 @@ body {
     margin-bottom: 40px;
 }
 
+.quoteSection {
+    width: 100%;
+    padding: 40 20 40 20;
+    text-align: left;
+    background-color: rgba(60, 221, 243, 1);
+}
+
+.quoteTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    line-height: 41px;
+    padding-left: 20px;
+}
+
+.quoteDescription {
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1); 
+}
