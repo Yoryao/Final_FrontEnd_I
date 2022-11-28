@@ -152,3 +152,54 @@ body {
     margin-right: 10px;
     padding: 5px;
 }
+
+
+/* best section */
+
+.bestSection {
+    text-align: center;
+    align-items: center;
+}
+
+.bestCard {
+    width: 445px;
+    height: 219px;
+    background-color: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.bestTitle {
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(36, 46, 83, 1);
+}
+
+.bestCardImage {
+    position: relative;
+    top: 0px;
+    width: 72px;
+    }
+
+.bestCardTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(36, 72, 104, 1);
+}
+
+.bestCardDescription {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 45px;
+    color: rgba(185, 185, 193, 1);
+
+
+
+
+
+
+}
+
+
