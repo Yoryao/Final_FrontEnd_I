@@ -236,3 +236,56 @@ body {
 
 
 /* FOOTER SECTION STYLES */
+
+
+
+footer {
+    align-items: center;
+    background-color:rgba(30, 30, 38, 1);
+}
+.goBtn {
+    width: 63px;
+    height: 42px;
+    background-color: rgba(139, 72, 191, 1);
+    border-radius: 50px;
+    font-size: 14px;
+    border: none;
+    color:#FFFFFF;
+
+
+
+}
+.footerInputContainer {
+    margin: 10px 10px;
+
+}
+
+
+.footerInput {
+    width: 308px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.footerImages {
+    align-items: center;
+}
+
+.iconContainer {
+    margin: 0;
+    width: 480px;
+    border: 1px solid red;
+    justify-content: space-around;
+}
+.footerLogo {
+    width: 100px;
+    color: #FAFAFA;
+}
+
+.copyrigth {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgba(140, 140, 148, 1);
+
+}
