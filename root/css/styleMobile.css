@@ -194,12 +194,98 @@ body {
     font-weight: 500;
     padding-bottom: 45px;
     color: rgba(185, 185, 193, 1);
+}
+
+#card2, #card3 {
+    display: none;
+}
 
 
+/* lower section quote */
 
+.lowerQuoteSection {
+    align-items: center;
+    /* height: 366px; */
+    background-color: rgba(60, 221, 243, 1);
+    padding-left: 80px;
+    padding-right: 80px;
+}
 
+.lowerQuoteTitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    letter-spacing: -0.005em;
+}
+
+.quoteButton {
+    width: 134px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(35, 44, 80, 1);
+    color: rgba(255, 255, 255, 1) ;
+    border: none;
+    box-shadow: 0px, 4px, 8px, rgba(0,  0, 0, 0.25);
+    margin-bottom: 40px;
 
 
 }
 
 
+/* FOOTER SECTION STYLES */
+
+
+
+footer {
+    align-items: center;
+    background-color:rgba(30, 30, 38, 1);
+}
+.goBtn {
+    width: 63px;
+    height: 42px;
+    background-color: rgba(139, 72, 191, 1);
+    border-radius: 50px;
+    font-size: 14px;
+    border: none;
+    color:#FFFFFF;
+
+
+
+}
+.footerInputContainer {
+    margin: 10px 10px;
+
+}
+
+
+.footerInput {
+    width: 308px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.footerImages {
+    align-items: center;
+}
+
+.iconContainer {
+    margin: 0;
+    width: 480px;
+    border: 1px solid red;
+    justify-content: space-around;
+}
+.footerLogo {
+    width: 100px;
+    color: #FAFAFA;
+}
+
+.copyrigth {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgba(140, 140, 148, 1);
+
+}
