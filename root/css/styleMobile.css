@@ -120,16 +120,35 @@ body {
     color: rgba(255, 255, 255, 1); 
 }
 
+/* Card Style */
+
 .titleContainer {
+    height: 43px;
     background-color: rgba(139, 72, 191, 0.3);
     border-radius: 30px 0 0 30px;
+    align-items: center;
+    
 }
 
 .cardNumber {
-    width: 70px;
+    justify-content: center;
     height: 43px;
-    padding: 10 25 10 25;
+    width: 70px;
+    /* padding: 10 25 10 25; */
     border-radius: 30px;
     text-align: center;
     background-color: #8b48bf;
+}
+
+.cardTitle {
+    padding-left: 25px;
+}
+
+.cardDescription {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #b3b2b7;
+    margin-right: 10px;
+    padding: 5px;
 }
