@@ -20,7 +20,6 @@ body {
     width: 480px;
     margin: 0;
     padding: 0;
-    border: 1px solid pink;
     }
 
 .flexCol {
@@ -38,7 +37,6 @@ body {
 }
 
 .headerContainer {
-    border: 1px solid green;
     width: 100%;
     height: 10vh;
     justify-content: space-between;
@@ -58,14 +56,12 @@ body {
 
 
 #padelPlayer {
-    border: 1px solid blue;
     width: 90%;
 
 }
 
 .padelIntro {
     width: 90%;
-    border:1px solid red;
     text-align: right;
 }
 
@@ -241,8 +237,10 @@ body {
 
 footer {
     align-items: center;
+    justify-content: center;
     background-color:rgba(30, 30, 38, 1);
 }
+
 .goBtn {
     width: 63px;
     height: 42px;
@@ -251,20 +249,46 @@ footer {
     font-size: 14px;
     border: none;
     color:#FFFFFF;
-
-
-
 }
+
 .footerInputContainer {
-    margin: 10px 10px;
-
+    margin: 52px 10px 20px 10px;
 }
-
 
 .footerInput {
     width: 308px;
+    padding-left: 10px;
     border-radius: 50px;
     margin-right: 10px;
+    font-size: 13px;
+    color:  rgba(160, 160, 160, 1);
+    
+}
+
+.footerLinks {
+    width: 100%;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.footerLinksList {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footerLink {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footerA {
+    padding-bottom: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color:#FFFFFF;
 }
 
 .footerImages {
@@ -272,20 +296,337 @@ footer {
 }
 
 .iconContainer {
-    margin: 0;
+    margin: 30px 0px;
     width: 480px;
-    border: 1px solid red;
     justify-content: space-around;
+}
+
+.icon {
+    width: 20px;
 }
 .footerLogo {
     width: 100px;
     color: #FAFAFA;
+    margin-bottom: 30px;
 }
 
 .copyrigth {
+   
+    height: 70px;
     font-size: 13px;
     font-weight: 500;
     line-height: 18px;
     color: rgba(140, 140, 148, 1);
+
+}
+
+/* COMIENZO STYLE DESKTOP ----------------------------------------------------------- */
+
+@media screen and (width > 480px) {
+    body {
+        width: 1440px;
+        }
+    
+.headerContainer {
+    align-items: center;
+}
+
+.contactBtn {
+    align-self: center;
+}
+        .anchorContainer {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid red;
+            align-items: center;
+        }
+        
+    .menuBtn {
+        display: none;
+    }
+    
+    /* HeroSection */
+    .heroSection {
+        flex-direction: row;
+    }
+    
+    .navLink {
+        margin-right: 10px;
+        text-decoration: none;
+       }
+   
+    li {
+        list-style: none;
+    } 
+
+
+    #padelPlayer {
+
+    }
+    
+    .padelIntro {
+   
+    }
+    
+    .mainTitle {
+        font-size: 50px;
+        font-weight: 700;
+        color: rgba(35, 44, 80, 1);
+        
+    } 
+    
+    .mainDescription {
+        font-size: 17px;
+        font-weight: 500;
+        color: rgba(0,  0, 0, 1);
+        
+    }
+    
+    .contactBtn {
+        font-size: 13px;
+        font-weight: 500;
+        width: 134px;
+        height: 44px;
+        background-color: #8b48bf;
+        color: rgba(255, 255, 255, 1);
+        border-radius: 50px;
+        border: none;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+    
+    .quoteSection {
+        width: 100%;
+        padding: 40 20 40 20;
+        text-align: left;
+        background-color: rgba(60, 221, 243, 1);
+    }
+    
+    .quoteTitle {
+        font-size: 36px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        line-height: 41px;
+        padding-left: 20px;
+    }
+    
+    .quoteDescription {
+        padding-left: 20px;
+        padding-right: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 1); 
+    }
+    
+    /* Card Style */
+    
+    .titleContainer {
+        height: 43px;
+        background-color: rgba(139, 72, 191, 0.3);
+        border-radius: 30px 0 0 30px;
+        align-items: center;
+        
+    }
+    
+    .cardNumber {
+        justify-content: center;
+        height: 43px;
+        width: 70px;
+        /* padding: 10 25 10 25; */
+        border-radius: 30px;
+        text-align: center;
+        background-color: #8b48bf;
+    }
+    
+    .cardTitle {
+        padding-left: 25px;
+    }
+    
+    .cardDescription {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        color: #b3b2b7;
+        margin-right: 10px;
+        padding: 5px;
+    }
+    
+    
+    /* best section */
+    
+    .bestSection {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .bestCard {
+        width: 445px;
+        height: 219px;
+        background-color: #FAFAFA;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    
+    .bestTitle {
+        margin-bottom: 80px;
+        font-size: 40px;
+        font-weight: 700;
+        color: rgba(36, 46, 83, 1);
+    }
+    
+    .bestCardImage {
+        position: relative;
+        top: 0px;
+        width: 72px;
+        }
+    
+    .bestCardTitle {
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(36, 72, 104, 1);
+    }
+    
+    .bestCardDescription {
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 45px;
+        color: rgba(185, 185, 193, 1);
+    }
+    
+    #card2, #card3 {
+        display: none;
+    }
+    
+    
+    /* lower section quote */
+    
+    .lowerQuoteSection {
+        align-items: center;
+        /* height: 366px; */
+        background-color: rgba(60, 221, 243, 1);
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .lowerQuoteTitle {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        letter-spacing: -0.005em;
+    }
+    
+    .quoteButton {
+        width: 134px;
+        height: 44px;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: rgba(35, 44, 80, 1);
+        color: rgba(255, 255, 255, 1) ;
+        border: none;
+        box-shadow: 0px, 4px, 8px, rgba(0,  0, 0, 0.25);
+        margin-bottom: 40px;
+    
+    
+    }
+    
+    
+    /* FOOTER SECTION STYLES */
+    
+    
+    
+    footer {
+        align-items: center;
+        justify-content: center;
+        background-color:rgba(30, 30, 38, 1);
+    }
+    
+    .goBtn {
+        width: 63px;
+        height: 42px;
+        background-color: rgba(139, 72, 191, 1);
+        border-radius: 50px;
+        font-size: 14px;
+        border: none;
+        color:#FFFFFF;
+    }
+    
+    .footerInputContainer {
+        margin: 52px 10px 20px 10px;
+    }
+    
+    .footerInput {
+        width: 308px;
+        padding-left: 10px;
+        border-radius: 50px;
+        margin-right: 10px;
+        font-size: 13px;
+        color:  rgba(160, 160, 160, 1);
+        
+    }
+    
+    .footerLinks {
+        width: 100%;
+        padding-left: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .footerLinksList {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .footerLink {
+        list-style: none;
+        margin-top: 10px;
+    }
+    
+    .footerA {
+        padding-bottom: 12px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color:#FFFFFF;
+    }
+    
+    .footerImages {
+        align-items: center;
+    }
+    
+    .iconContainer {
+        margin: 30px 0px;
+        width: 480px;
+        justify-content: space-around;
+    }
+    
+    .icon {
+        width: 20px;
+    }
+    .footerLogo {
+        width: 100px;
+        color: #FAFAFA;
+        margin-bottom: 30px;
+    }
+    
+    .copyrigth {
+       
+        height: 70px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 18px;
+        color: rgba(140, 140, 148, 1);
+    
+    }
+
+
+
+
+
+
 
 }
