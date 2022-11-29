@@ -328,8 +328,8 @@ footer {
         }
     
     .headerContainer {
-        border: 1px solid green;
-
+        width: 90%;
+        margin: 0 auto;
         align-items: center;
     }
     
@@ -337,7 +337,6 @@ footer {
     .anchorContainer {
         display: flex;
         flex-direction: row;
-        border: 1px solid red;
         align-items: center;
     }
 
@@ -347,7 +346,7 @@ footer {
     .contactBtn {
         margin: auto 0 auto 0;
     }
-
+    
 
      
     .menuBtn {
@@ -361,8 +360,10 @@ footer {
     
     /* HeroSection */
     .heroSection {
-        border: 1px solid green;
         flex-direction: row;
+        width: 90%;
+        margin: 0px auto 80px;
+
     }
     
     .navLink {
@@ -376,51 +377,39 @@ footer {
 
 
     #padelPlayer {
-
+        width: 55%;
     }
     
     .padelIntro {
-   
+        width: 45%;
     }
     
     .mainTitle {
-        font-size: 50px;
-        font-weight: 700;
-        color: rgba(35, 44, 80, 1);
-        
-    } 
+        padding-left: 45px;
+     } 
     
     .mainDescription {
-        font-size: 17px;
-        font-weight: 500;
-        color: rgba(0,  0, 0, 1);
-        
+        margin-bottom: 55px;       
     }
     
-
+/*  QUOTE SECTION */
     
     .quoteSection {
-        width: 100%;
-        padding: 40 20 40 20;
-        text-align: left;
-        background-color: rgba(60, 221, 243, 1);
+        flex-direction: row;
+        align-items: center;
+        background-color: rgba(139, 72, 191, 1);
+        justify-content: space-evenly;
+
     }
     
     .quoteTitle {
-        font-size: 36px;
-        font-weight: 700;
-        color: rgba(255, 255, 255, 1);
-        line-height: 41px;
-        padding-left: 20px;
-    }
+        border: 1px solid black;
+        width: 40%;
+     }
     
     .quoteDescription {
-        padding-left: 20px;
-        padding-right: 40px;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 28px;
-        color: rgba(255, 255, 255, 1); 
+        border: 1px solid black;
+        width: 40%;
     }
     
     /* Card Style */
