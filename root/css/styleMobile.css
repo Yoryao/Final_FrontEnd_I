@@ -134,6 +134,7 @@ body {
     border-radius: 30px;
     text-align: center;
     background-color: #8b48bf;
+    color: rgba(255, 255, 255, 1);
 }
 
 .cardTitle {
@@ -188,7 +189,7 @@ body {
 .bestCardDescription {
     font-size: 16px;
     font-weight: 500;
-    padding-bottom: 45px;
+    padding: 0px 5px 45px 5px;
     color: rgba(185, 185, 193, 1);
 }
 
@@ -412,37 +413,37 @@ footer {
         width: 40%;
     }
     
-    /* Card Style */
+    /* LIST SECTION */
     
-    .titleContainer {
-        height: 43px;
-        background-color: rgba(139, 72, 191, 0.3);
-        border-radius: 30px 0 0 30px;
-        align-items: center;
-        
+    .listSection {
+        padding-top: 0;
+        width: 100%;
+        background-color: rgba(250,  250, 250, 1);
     }
     
-    .cardNumber {
+    #cardList {
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        height: 43px;
-        width: 70px;
-        /* padding: 10 25 10 25; */
-        border-radius: 30px;
-        text-align: center;
-        background-color: #8b48bf;
     }
+
+    .cardId {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .titleContainer {
+        background-color: transparent;    
+    }
+    
     
     .cardTitle {
         padding-left: 25px;
     }
     
     .cardDescription {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 25px;
-        color: #b3b2b7;
-        margin-right: 10px;
-        padding: 5px;
+       padding-left: 95px;
+       padding-right: 20px;
     }
     
     
@@ -453,13 +454,20 @@ footer {
         align-items: center;
     }
     
+
+    .cardContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
     .bestCard {
         width: 445px;
         height: 219px;
-        background-color: #FAFAFA;
+        /* background-color: #FAFAFA; */
+        background-color: #afa;
         justify-content: center;
         align-items: center;
-        margin-bottom: 50px;
+        margin: 0 5px 50px 5px;
     }
     
     .bestTitle {
@@ -469,17 +477,8 @@ footer {
         color: rgba(36, 46, 83, 1);
     }
     
-    .bestCardImage {
-        position: relative;
-        top: 0px;
-        width: 72px;
-        }
-    
-    .bestCardTitle {
-        font-size: 16px;
-        font-weight: 700;
-        color: rgba(36, 72, 104, 1);
-    }
+
+  
     
     .bestCardDescription {
         font-size: 16px;
@@ -488,8 +487,10 @@ footer {
         color: rgba(185, 185, 193, 1);
     }
     
+
+
     #card2, #card3 {
-        display: none;
+        display: flex;
     }
     
     
