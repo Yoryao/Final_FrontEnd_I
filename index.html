@@ -16,16 +16,16 @@
   </head>
   <body>
     <header class="headerContainer flexRow">
-      <img id="mainLogo" src="./root/img/logo.svg" alt="Sportit Logo" />
-      <nav class="anchorContainer">
-        <ul class="flexRow">
-          <li><a class="navLink" href="#">Sports</a></li>
-          <li><a class="navLink" href="#">Products</a></li>
-          <li><a class="navLink" href="#">About Us</a></li>
-          <li><a class="navLink" href="#">Training</a></li>
-          <li><a class="navLink" href="#">Community</a></li>
-        </ul>
-    </nav>
+        <img id="mainLogo" src="./root/img/logo.svg" alt="Sportit Logo" />
+        <nav class="anchorContainer">
+            <ul class="flexRow">
+                <li class="navLinkLi"><a class="navLink" href="#">Sports</a></li>
+                <li class="navLinkLi"><a class="navLink" href="#">Products</a></li>
+                <li class="navLinkLi"><a class="navLink" href="#">About Us</a></li>
+                <li class="navLinkLi"><a class="navLink" href="#">Training</a></li>
+                <li class="navLinkLi"><a class="navLink" href="#">Community</a></li>
+            </ul>
+        </nav>
         <button class="contactBtn">Contact</button>
         <img class="menuBtn" src="./root/img/icon-hamburger.svg" alt="Menu Icon">
     </header>
@@ -39,15 +39,20 @@
                 <button class="contactBtn">Contact</button>
             </div>
         </section>
+        <!-- EVALUAR CAMBIO DE SECTION DE ACUERDO A LA DISTRIBUCION -->
         <section class="quoteSection flexCol">
             <h3 class="quoteTitle">What´s different between pros?</h3>
             <p class="quoteDescription">Manage provides all the functionality your
-                teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+                teas needs, without the complexity. Our software is tailor-made for modern digital product teams. software is tailor-made for modern digital product teams</p>
 
         </section>
-        <section class="listSection">
-            <ul class="flexCol">
-                <li class="flexCol">
+
+
+<!-- CARD SECTION -->
+
+<section class="listSection">
+            <ul class="flexCol" id="cardList">
+                <li class="flexCol cardId">
                     <div class="card">
                         <div class="flexRow titleContainer">
                             <h4 class="cardNumber flexCol">01</h4>
@@ -56,7 +61,7 @@
                         <p class="cardDescription">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
                     </div>
                 </li>
-                <li class="flexCol">
+                <li class="flexCol cardId">
                     <div class="card">
                         <div class="flexRow titleContainer">
                             <h4 class="cardNumber flexCol">01</h4>
@@ -65,7 +70,7 @@
                         <p class="cardDescription">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
                     </div>
                 </li>
-                <li class="flexCol">
+                <li class="flexCol cardId">
                     <div class="card">
                         <div class="flexRow titleContainer">
                             <h4 class="cardNumber flexCol">01</h4>
@@ -75,9 +80,15 @@
                     </div>
                 </li>
             </ul>
-        </section>
+        </section> 
+
+
+
+
+
         <section class="bestSection flexCol">
             <h2 class="bestTitle">Best of the month</h2>
+          <div class="cardContainer">
             <div class="bestCard flexCol" id="card1">
                 <img class="bestCardImage" src="./root/img/avatar.lebron.png" alt="Lebron image">
                 <h4 class="bestCardTitle">Lebron</h4>
@@ -93,15 +104,25 @@
                 <h4 class="bestCardTitle">Lebron</h4>
                 <p class="bestCardDescription">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
             </div>
+        </div>
 
+        <button class="contactBtn moreBtn">More</button>
         </section>
+
+
+
+
+
+
+
         <section class="lowerQuoteSection flexCol">
             <h2 class="lowerQuoteTitle">Get to  know the best teams of the year</h2>
             <button class="quoteButton">Go for it</button>
         </section>
     </main>
 
-    <footer class="flexCol ">
+    <footer  class="flexCol ">
+       <div id="footerContainer">
         <div class="footerInputContainer flexRow">
             <input class="footerInput" type="text" name="" placeholder="Update in your inbox...">
             <button class="goBtn">Go</button>
@@ -121,16 +142,17 @@
         </div>
         <div class="footerImages flexCol">
             <nav class="flexRow iconContainer">
-                <a href="#"><img class="icon" src="./root/img/icon-facebook.svg"></a>
-                <a href="#"><img class="icon" src="./root/img/icon-youtube.svg"></a>
-                <a href="#"><img class="icon" src="./root/img/icon-twitter.svg"></a>
-                <a href="#"><img class="icon" src="./root/img/icon-pinterest.svg"></a>
-                <a href="#"><img class="icon" src="./root/img/icon-instagram.svg"></a>
+                <a class="socialNetworkAnchor" href="#"><img class="icon" src="./root/img/icon-facebook.svg"></a>
+                <a class="socialNetworkAnchor" href="#"><img class="icon" src="./root/img/icon-youtube.svg"></a>
+                <a class="socialNetworkAnchor" href="#"><img class="icon" src="./root/img/icon-twitter.svg"></a>
+                <a class="socialNetworkAnchor" href="#"><img class="icon" src="./root/img/icon-pinterest.svg"></a>
+                <a class="socialNetworkAnchor" href="#"><img class="icon" src="./root/img/icon-instagram.svg"></a>
             </nav>
 
             
             <img src="./root/img/logo.svg" class="footerLogo" alt="Sportit Logo">
         </div>
+    </div>
         <p class="copyrigth">Copyright 2020. All Rights Reserved</p>
     </footer>
 
