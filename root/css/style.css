@@ -200,13 +200,19 @@ body {
         cursor: pointer;
     }
 
+    #card2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
 /* CAMBIAR POR PSEUDOELEMENTO */
 #card1 {
     display: none;
+    margin-right: 0;
 }
 
 #card3 {
     display: none;
+    margin-left: 0;
 }
 
 /* LOWER SECTION QUOTE */
@@ -255,12 +261,16 @@ footer {
 
 .footerInput {
     width: 308px;
-    padding-left: 10px;
     border-radius: 50px;
     margin-right: 10px;
     font-size: 13px;
+}
+
+.footerInput::placeholder {
+    padding-left: 10px;
     color:  rgba(160, 160, 160, 1);  
 }
+
 
 .goBtn {
     width: 63px;
