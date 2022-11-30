@@ -1,19 +1,8 @@
-/* # Guía de estilo de front-end
-- Mobile: 480px
-## Colores
-Violeta: #8B48BF
-Celeste brillante: #3CDDF3
-### Neutro
-Azul grisáceo oscuro: #1E1E26
-Azul muy oscuro: #232851
-Variante gris claro: rgb (249, 249, 249)
-## Tipografia
-### Body Copy
-- Font size: 16px*/
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter&family=Karla&display=swap');
+
 * {
-box-sizing: border-box;    
-font-family: 'Be Vietnam Pro', sans-serif;
+    box-sizing: border-box;    
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 body {
@@ -32,9 +21,8 @@ body {
     flex-direction: row;
 }
 
-.anchorContainer {
-    display: none;
-}
+
+/* HEADER STYLES */
 
 .headerContainer {
     width: 100%;
@@ -44,39 +32,8 @@ body {
     padding: 1vh 3vh;
 }
 
-.menuBtn {
-    width: 5vh;
-}
-
-/* HeroSection */
-.heroSection {
-    width: 100%;
-    align-items: center;
-}
-
-
-#padelPlayer {
-    width: 90%;
-
-}
-
-.padelIntro {
-    width: 90%;
-    text-align: right;
-}
-
-.mainTitle {
-    font-size: 50px;
-    font-weight: 700;
-    color: rgba(35, 44, 80, 1);
-    
-} 
-
-.mainDescription {
-    font-size: 17px;
-    font-weight: 500;
-    color: rgba(0,  0, 0, 1);
-    
+.anchorContainer {
+    display: none;
 }
 
 .contactBtn {
@@ -91,6 +48,44 @@ body {
     letter-spacing: 1px;
     margin-bottom: 40px;
 }
+#headerContactBtn {
+    display: none;
+}
+
+.menuBtn {
+    width: 5vh;
+}
+
+/* HERO SECTION */
+
+.heroSection {
+    width: 100%;
+    align-items: center;
+}
+
+#padelPlayer {
+    width: 90%;
+}
+
+.padelText {
+    width: 90%;
+    text-align: right;
+}
+
+.mainTitle {
+    font-size: 50px;
+    font-weight: 700;
+    color: rgba(35, 44, 80, 1);
+   
+} 
+
+.mainDescription {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(0,  0, 0, 1); 
+}
+
+/*  QUOTE SECTION */
 
 .quoteSection {
     width: 100%;
@@ -116,7 +111,11 @@ body {
     color: rgba(255, 255, 255, 1); 
 }
 
-/* Card Style */
+#quoteMobile {
+    display: none;
+}
+
+/* LIST SECTION */
 
 .titleContainer {
     height: 43px;
@@ -130,7 +129,6 @@ body {
     justify-content: center;
     height: 43px;
     width: 70px;
-    /* padding: 10 25 10 25; */
     border-radius: 30px;
     text-align: center;
     background-color: #8b48bf;
@@ -151,11 +149,18 @@ body {
 }
 
 
-/* best section */
+/* BEST SECTION */
 
 .bestSection {
     text-align: center;
     align-items: center;
+}
+
+.bestTitle {
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(36, 46, 83, 1);
 }
 
 .bestCard {
@@ -167,18 +172,11 @@ body {
     margin-bottom: 50px;
 }
 
-.bestTitle {
-    margin-bottom: 100px;
-    font-size: 40px;
-    font-weight: 700;
-    color: rgba(36, 46, 83, 1);
-}
-
 .bestCardImage {
     position: relative;
     top: 0px;
     width: 72px;
-    }
+}
 
 .bestCardTitle {
     font-size: 16px;
@@ -193,19 +191,23 @@ body {
     color: rgba(185, 185, 193, 1);
 }
 
-#card2, #card3 {
+/* CAMBIAR POR PSEUDOELEMENTO */
+#card1 {
+    display: none;
+}
+
+#card3 {
     display: none;
 }
 
 .moreBtn {
-    margin: 50px 0px 50px 0px;
+    margin: 20px 0px 50px 0px;
 }
 
-/* lower section quote */
+/* LOWER SECTION QUOTE */
 
 .lowerQuoteSection {
     align-items: center;
-    /* height: 366px; */
     background-color: rgba(60, 221, 243, 1);
     padding-left: 80px;
     padding-right: 80px;
@@ -230,29 +232,15 @@ body {
     border: none;
     box-shadow: 0px, 4px, 8px, rgba(0,  0, 0, 0.25);
     margin-bottom: 40px;
-
-
 }
 
 
 /* FOOTER SECTION STYLES */
 
-
-
 footer {
     align-items: center;
     justify-content: center;
     background-color:rgba(30, 30, 38, 1);
-}
-
-.goBtn {
-    width: 63px;
-    height: 42px;
-    background-color: rgba(139, 72, 191, 1);
-    border-radius: 50px;
-    font-size: 14px;
-    border: none;
-    color:#FFFFFF;
 }
 
 .footerInputContainer {
@@ -265,8 +253,17 @@ footer {
     border-radius: 50px;
     margin-right: 10px;
     font-size: 13px;
-    color:  rgba(160, 160, 160, 1);
-    
+    color:  rgba(160, 160, 160, 1);  
+}
+
+.goBtn {
+    width: 63px;
+    height: 42px;
+    background-color: rgba(139, 72, 191, 1);
+    border-radius: 50px;
+    font-size: 14px;
+    border: none;
+    color:#FFFFFF;
 }
 
 .footerLinks {
@@ -278,8 +275,7 @@ footer {
 .footerLinksList {
     width: 50%;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 
 .footerLink {
@@ -308,6 +304,7 @@ footer {
 .icon {
     width: 20px;
 }
+
 .footerLogo {
     width: 100px;
     color: #FAFAFA;
@@ -315,13 +312,11 @@ footer {
 }
 
 .copyrigth {
-   
     height: 70px;
     font-size: 13px;
     font-weight: 500;
     line-height: 18px;
     color: rgba(140, 140, 148, 1);
-
 }
 
 /* COMIENZO STYLE DESKTOP ----------------------------------------------------------- */
@@ -329,7 +324,7 @@ footer {
 @media screen and (width > 480px) {
     body {
         width: 1440px;
-        }
+    }
     
     .headerContainer {
         width: 90%;
@@ -337,7 +332,6 @@ footer {
         align-items: center;
     }
     
-
     .anchorContainer {
         display: flex;
         flex-direction: row;
@@ -349,6 +343,10 @@ footer {
     }
     .contactBtn {
         margin: auto 0 auto 0;
+    }
+
+    #headerContactBtn {
+        display: initial;
     }
     
 
@@ -384,7 +382,7 @@ footer {
         width: 55%;
     }
     
-    .padelIntro {
+    .padelText {
         width: 45%;
     }
     
@@ -466,7 +464,7 @@ footer {
         margin: 0 5px 0px 5px;
     }
     
-    #card2, #card3 {
+    #card1, #card3 {
         display: flex;
     }
     
