@@ -48,6 +48,7 @@ body {
     letter-spacing: 1px;
     margin-bottom: 40px;
 }
+
 #headerContactBtn {
     display: none;
 }
@@ -89,7 +90,7 @@ body {
 
 .quoteSection {
     width: 100%;
-    padding: 40 20 40 20;
+    padding: 40px 20px 40px 20px;
     text-align: left;
     background-color: rgba(60, 221, 243, 1);
 }
@@ -111,7 +112,7 @@ body {
     color: rgba(255, 255, 255, 1); 
 }
 
-#quoteMobile {
+#quoteDesktop {
     display: none;
 }
 
@@ -191,6 +192,14 @@ body {
     color: rgba(185, 185, 193, 1);
 }
 
+    .moreBtn {
+        margin: 50px 0px 50px 0px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
 /* CAMBIAR POR PSEUDOELEMENTO */
 #card1 {
     display: none;
@@ -200,13 +209,10 @@ body {
     display: none;
 }
 
-.moreBtn {
-    margin: 20px 0px 50px 0px;
-}
-
 /* LOWER SECTION QUOTE */
 
 .lowerQuoteSection {
+
     align-items: center;
     background-color: rgba(60, 221, 243, 1);
     padding-left: 80px;
@@ -329,7 +335,6 @@ footer {
     .headerContainer {
         width: 90%;
         margin: 0 auto;
-        align-items: center;
     }
     
     .anchorContainer {
@@ -342,15 +347,13 @@ footer {
         padding-left: 5px;
     }
     .contactBtn {
-        margin: auto 0 auto 0;
+        margin: auto 0 ;
     }
 
     #headerContactBtn {
         display: initial;
     }
     
-
-     
     .menuBtn {
         display: none;
     }
@@ -376,7 +379,6 @@ footer {
     li {
         list-style: none;
     } 
-
 
     #padelPlayer {
         width: 55%;
@@ -405,17 +407,27 @@ footer {
     }
     
     .quoteTitle {
-        border: 1px solid black;
         width: 40%;
      }
     
     .quoteDescription {
-        border: 1px solid black;
         width: 40%;
+    }
+
+    #quoteMobile {
+        display: none;
+    }
+
+    #quoteDesktop {
+        display: initial;
     }
     
     /* LIST SECTION */
-    
+   
+    .titleContainer {
+        background-color: transparent;    
+    }
+      
     .listSection {
         margin-top: 0px;
         padding-top: 0;
@@ -434,15 +446,6 @@ footer {
         width: 50%;
         padding: 30px;
     }
-
-    .titleContainer {
-        background-color: transparent;    
-    }
-    
-    
-    .cardTitle {
-        padding-left: 25px;
-    }
     
     .cardDescription {
        padding-left: 95px;
@@ -450,7 +453,7 @@ footer {
     }
     
     
-    /* best section */
+   /* BEST SECTION */
     
     .cardContainer {
         display: flex;
@@ -472,8 +475,8 @@ footer {
     /* lower section quote */
     
     .lowerQuoteSection {
+        margin-top: 30px;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
         background-color: rgba(139, 72, 191, 1);
     }
@@ -487,15 +490,11 @@ footer {
     .quoteButton {
         background-color: rgba(255, 255, 255, 1);
         color: rgba(139, 72, 191, 1);
-        box-shadow: 0px, 4px, 8px, rgba(0,  0, 0, 0.25);
         margin-bottom: 0;
         margin-right: 130px;
     }
     
-    
     /* FOOTER SECTION STYLES */
-    
-    
     
     #footerContainer {
         width: 100%;
@@ -520,25 +519,17 @@ footer {
     .iconContainer {
         margin-top: 0px;
         width: 100%;
-        justify-content: space-around;
     }
-
     
     .footerLinks {
         margin-top: 0px;
         width: 60%;
         padding-left: 80px;
         padding-right: 30px;
-        
     }
-    
-    
+       
     .footerLinksList {
-        margin-top: 0px;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        
+        margin-top: 0px;     
     }
     
     .footerLink {
@@ -559,15 +550,6 @@ footer {
     
     .copyrigth {
         height: 50px;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 18px;
-        color: rgba(140, 140, 148, 1);
-    }
-
-
-    .moreBtn {
-        margin: 50px 0px 50px 0px;
     }
 
 }
